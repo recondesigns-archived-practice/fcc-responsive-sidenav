@@ -1,18 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-const AppContainer = styled.div`
-  & > h1 {
-    margin: 0px;
-    text-align: center;
-  }
+const Container = styled.div`
+  border: 2px solid lightcoral;
+`;
+
+const Title = styled.h1`
+  border: 1px dashed green;
 `;
 export default function App() {
   return (
-    <div className="App">
-      <AppContainer>
-        <h1>{"App Component"}</h1>
-      </AppContainer>
-    </div>
+    <Container>
+      <Title>{"App Component"}</Title>
+    </Container>
   );
 }

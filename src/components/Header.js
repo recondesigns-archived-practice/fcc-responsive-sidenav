@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
+import { AppContext } from "../contexts/AppProvider";
 import menuIconImg from "../assets/menu-icon.svg";
 
 const Container = styled.header`
@@ -16,7 +17,7 @@ const MenuIcon = styled.img`
 `;
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useContext(AppContext);
 
   function handleClick(state, setter) {
     if (state === false) {

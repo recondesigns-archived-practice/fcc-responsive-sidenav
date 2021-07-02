@@ -65,6 +65,7 @@ export default function SideNav() {
 
   function setRoute(func, path) {
     func.push(path);
+    closeMenu(isMenuOpen, setIsMenuOpen);
   }
 
   let navDisplay = setNavDisplay(isMenuOpen);

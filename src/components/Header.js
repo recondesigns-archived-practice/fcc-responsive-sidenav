@@ -4,7 +4,7 @@ import { AppContext } from "../contexts/AppProvider";
 import menuIconImg from "../assets/menu-icon.svg";
 
 const Container = styled.header`
-  padding: 20px 16px 20px 16px;
+  padding: 20px 40px 20px 16px;
   display: flex;
   height: 64px;
   justify-content: flex-end;

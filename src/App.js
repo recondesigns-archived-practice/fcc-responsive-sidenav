@@ -7,7 +7,8 @@ import HomePage from "./pages/Home";
 const Container = styled.div`
   position: relative;
   height: 100vh;
-  border: 2px solid lightcoral;
+  background: #f1f5f8;
+  /* border: 2px solid lightcoral; */
 `;
 
 export default function App() {

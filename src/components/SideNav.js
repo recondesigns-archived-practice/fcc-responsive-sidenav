@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { AppContext } from "../contexts/AppProvider";
+import { useHistory } from "react-router-dom";
 import NavItem from "./NavItem";
 import logoImg from "../assets/logo.svg";
 import closeX from "../assets/close-icon.svg";
@@ -38,11 +39,13 @@ const LogoImage = styled.img`
 const CloseIcon = styled.img`
   width: 20px;
   height: 20px;
+  cursor: pointer;
   /* border: 1px dashed green; */
 `;
 
 export default function SideNav() {
   const [isMenuOpen, setIsMenuOpen] = useContext(AppContext);
+  let history = useHistory();
 
   function setNavDisplay(navState) {
     if (navState === false) {
@@ -60,8 +63,12 @@ export default function SideNav() {
     }
   }
 
+  function setRoute(func, path) {
+    func.push(path);
+  }
+
   let navDisplay = setNavDisplay(isMenuOpen);
-  console.log(navDisplay);
+  // console.log(history);
 
   return (
     <Container display={navDisplay}>
@@ -73,10 +80,16 @@ export default function SideNav() {
           onClick={() => closeMenu(isMenuOpen, setIsMenuOpen)}
         />
       </NavHeaderWrapper>
-      <NavItem label={"Home"} />
-      <NavItem label={"About"} />
-      <NavItem label={"Projects"} />
-      <NavItem label={"Contact"} />
+      <NavItem label={"Home"} onclick={() => setRoute(history, "/")} />
+      <NavItem label={"About"} onclick={() => setRoute(history, "/about")} />
+      <NavItem
+        label={"Projects"}
+        onclick={() => setRoute(history, "/projects")}
+      />
+      <NavItem
+        label={"Contact"}
+        onclick={() => setRoute(history, "/contact")}
+      />
     </Container>
   );
 }

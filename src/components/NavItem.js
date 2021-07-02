@@ -13,6 +13,7 @@ const ItemLabel = styled.p`
   letter-spacing: 0.4px;
   color: #414141;
   opacity: 0.6;
+  cursor: pointer;
   /* border: 1px dashed green; */
 
   &:hover {
@@ -22,9 +23,9 @@ const ItemLabel = styled.p`
 `;
 
 export default function NavItem(props) {
-  const { label } = props;
+  const { label, onclick } = props;
   return (
-    <Container>
+    <Container onClick={onclick}>
       <ItemLabel>{label}</ItemLabel>
     </Container>
   );

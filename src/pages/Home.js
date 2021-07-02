@@ -6,7 +6,6 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid dodgerblue; */
 `;
 
 const Title = styled.h1`
@@ -14,7 +13,6 @@ const Title = styled.h1`
   font-family: sans-serif;
   color: #414141;
   text-align: center;
-  /* border: 1px dashed green; */
 `;
 
 export default function HomePage() {

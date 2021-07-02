@@ -14,7 +14,6 @@ const Container = styled.div`
   height: 100%;
   display: ${(props) => props.display};
   background: #ffffff;
-  /* border: 2px dashed blue; */
 
   @media (min-width: 1023px) {
     width: 400px;
@@ -27,20 +26,17 @@ const NavHeaderWrapper = styled.div`
   height: 64px;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid dodgerblue; */
 `;
 
 const LogoImage = styled.img`
   width: 148px;
   height: 28px;
-  /* border: 1px dashed green; */
 `;
 
 const CloseIcon = styled.img`
   width: 20px;
   height: 20px;
   cursor: pointer;
-  /* border: 1px dashed green; */
 `;
 
 export default function SideNav() {
@@ -69,7 +65,6 @@ export default function SideNav() {
   }
 
   let navDisplay = setNavDisplay(isMenuOpen);
-  // console.log(history);
 
   return (
     <Container display={navDisplay}>

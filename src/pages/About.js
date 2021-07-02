@@ -6,12 +6,10 @@ const Page = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid lightcoral; */
 `;
 
 const Title = styled.h1`
   font-family: sans-serif;
-  /* border: 1px dashed green; */
 `;
 
 export default function AboutPage() {

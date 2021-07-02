@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Container = styled.div`
-  /* border: 2px solid dodgerblue; */
-`;
+const Container = styled.div``;
 
 const ItemLabel = styled.p`
   padding: 16px 16px 16px 16px;
@@ -14,7 +12,6 @@ const ItemLabel = styled.p`
   color: #414141;
   opacity: 0.6;
   cursor: pointer;
-  /* border: 1px dashed green; */
 
   &:hover {
     font-weight: 600;

@@ -12,7 +12,6 @@ const Container = styled.div`
   position: relative;
   height: 100vh;
   background: #f1f5f8;
-  /* border: 2px solid lightcoral; */
 `;
 
 export default function App() {

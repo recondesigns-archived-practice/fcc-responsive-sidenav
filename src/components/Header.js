@@ -8,7 +8,6 @@ const Container = styled.header`
   display: flex;
   height: 64px;
   justify-content: flex-end;
-  /* border: 1px solid black; */
 `;
 
 const MenuIcon = styled.img`
@@ -16,7 +15,6 @@ const MenuIcon = styled.img`
   height: 20px;
   display: ${(props) => props.display};
   cursor: pointer;
-  /* border: 1px dashed green; */
 `;
 
 export default function Header() {
